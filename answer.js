@@ -3,7 +3,7 @@
 
 function describeValue(str) {
     return (
-        `"${typeof str} | ${str ? "truthy" : "falsy"}"`
+        `${typeof str} | ${str ? "truthy" : "falsy"}`
     )
     
 }
@@ -26,7 +26,7 @@ function getDayType(day) {
             return "Working Day";
 
         default:
-            return "Invalid day";
+            return "Invalid Day";
     }
 }
 
@@ -39,7 +39,7 @@ function validateUsername(username) {
     }
 
     if (username.includes(" ")) {
-        return "No Spaces Allowed"
+        return "No Space Allowed"
     }
 
     if (username.toLowerCase().includes("admin")) {
@@ -96,5 +96,5 @@ function getChaseVerdict(target, scored, ballsLeft) {
         verdict = "Almost Impossible";
     }
 
-    return `Need ${runsNeeded} runs in ${ballsLeft} balls. | ${verdict}`;
+    return `Need ${runsNeeded} runs in ${ballsLeft} balls | ${verdict}`;
 }
